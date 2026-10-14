@@ -1,6 +1,5 @@
 # Anchor Auth
 
-> A clean, secure authentication website built with Express, MongoDB, EJS, and responsive CSS.
 
 Anchor Auth is a classroom-friendly authentication project that demonstrates account creation, login, protected pages, logout, and one-time password-reset links.
 
