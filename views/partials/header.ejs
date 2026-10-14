@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Anchor Auth — a simple, secure account space.">
+  <title><%= title %> · Anchor Auth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Anchor Auth home"><span class="brand-mark">A</span><span>anchor<span class="brand-dot">.</span></span></a>
+      <% if (currentUser) { %>
+        <form action="/logout" method="post"><button class="text-button" type="submit">Log out</button></form>
+      <% } else { %>
+        <a class="text-button" href="/login">Log in</a>
+      <% } %>
+    </header>

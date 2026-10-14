@@ -1,0 +1,3 @@
+<%- include('partials/header') %>
+<main class="dashboard-layout"><div class="dashboard-intro"><p class="eyebrow">Your space</p><h1>Good to have you here.</h1><p class="lede">You’re signed in and ready to keep moving.</p></div><section class="dashboard-panel"><div class="panel-icon">✓</div><div><p class="panel-label">Signed in as</p><p class="panel-email"><%= currentUser.email %></p></div><div class="panel-rule"></div><p class="panel-note">This protected page is only visible when your authentication cookie is valid.</p><form action="/logout" method="post"><button class="button button-quiet" type="submit">Log out</button></form></section></main>
+<%- include('partials/footer') %>
